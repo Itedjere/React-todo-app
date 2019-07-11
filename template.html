@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>React App</title>
+    <link rel="stylesheet" type="text/css" href="public/assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="public/assets/css/mystyle.css" />
+  </head>
+  <body>
+        <div class="container">
+                <div class="todolist-wrapper">
+                    <div class="todolist-container">
+                        <h2>Form control: checkbox</h2>
+                        <p>The form below contains three checkboxes. The last option is disabled:</p>
+                        <form class="todo-form" onSubmit={this.handleSubmit}>
+                            <div class="form-group">
+                                <label for="title">Enter Todo Title</label>
+                                <input 
+                                    type="text" 
+                                    name="title" 
+                                    class="form-control" 
+                                    id="title"
+                                />
+                            </div>
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                        <div class="todolist">
+                            <div class="checkbox">
+                                <div class="custom-control custom-checkbox">
+                                    <input 
+                                        type="checkbox" 
+                                        class="custom-control-input"
+                                        id="custom-control-input"
+                                    />
+                                    <label 
+                                        class="custom-control-label" 
+                                        for="custom-control-input"
+                                    >
+                                        Learning ReactJs
+                                    </label>
+                                </div>
+                                <div class="delTodo">
+                                    <button class="btn btn-danger btn-sm" >Delete</button>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <div class="custom-control custom-checkbox">
+                                    <input 
+                                        type="checkbox" 
+                                        class="custom-control-input"
+                                        id="custom-control-input1"
+                                    />
+                                    <label 
+                                        class="custom-control-label" 
+                                        for="custom-control-input1"
+                                        style="text-decoration: line-through; color: #9e9999;"
+                                    >
+                                        Learn VueJs
+                                    </label>
+                                </div>
+                                <div class="delTodo">
+                                    <button class="btn btn-danger btn-sm" >Delete</button>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <div class="custom-control custom-checkbox">
+                                    <input 
+                                        type="checkbox" 
+                                        class="custom-control-input"
+                                        id="custom-control-input1"
+                                    />
+                                    <label 
+                                        class="custom-control-label" 
+                                        for="custom-control-input1"
+                                    >
+                                        Learn Angular
+                                    </label>
+                                </div>
+                                <div class="delTodo">
+                                    <button class="btn btn-danger btn-sm" >Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+  </body>
+</html>
